@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 91px 124px;
+    box-sizing: border-box;  
+}
+
+.main-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-div {
+    width: 60%;
+}
+
+.main-div img {
+    width: 290px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.about-div h1 {
+    font-family: "Roboto Slab, sans-serif";
+    font-size: 55px;
+}
+
+.about-div p {
+    font-size: 24px;
+    font-family: "Roboto, sans-serif";
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.infos {
+    display: flex;
+    margin-top: 40px;
+}
+
+.info {
+    width: 25%;
+    margin-right: 60px;
+}
+
+
+
+@media screen and (min-width: 830px) and (max-width:1399px) {
+    body {
+        margin: 0;
+        padding: 56px 72px;
+        box-sizing: border-box;
+    }
+
+    .about-div h1 {
+        font-size: 32px;
+    }
+
+    .about-div p {
+        font-size: 14px;
+    }
+
+    .course-info img {
+        display: none;
+    }
+
+    .info h2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .info p {
+        font-size: 11px;
+    }
+    
+    .main-div img {
+        width: 165px;
+        height: 165px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 829px) {
+    body {
+        margin: 0;
+        padding: 56px 33px;
+        box-sizing: border-box;
+    }
+    
+    .about-div h1 {
+        font-size: 26px;
+    }
+
+    .about-div p {
+        font-size: 12px;
+    }
+
+    .main-div {
+        flex-direction: column;
+    }
+
+    .main-div img {
+        width: 165px;
+        height: 165px;
+        margin-top: 20px;
+        margin: auto;
+    }
+
+    .info {
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    .info h2 {
+        font-size: 12px;
+    }
+
+    .info p {
+        font-size: 10px;
+    }
+
+    .course-info img {
+        display: none;
+    }
+
+    .about-div {
+        width: 100%;
+    }
+
+    .infos {
+        margin-top: 20px;
+    }
+}
