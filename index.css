@@ -37,9 +37,9 @@ body {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    position: fixed;
-    left: 65%;
-    top: 9em;}
+    position: relative;
+    left: 17.5em;
+}
 
 #down-icon:hover {
     color: #833AE0;
