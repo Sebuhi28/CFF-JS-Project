@@ -37,14 +37,8 @@ body {
     width: 20px;
     height: 20px;
     cursor: pointer;
-<<<<<<< HEAD
     position: relative;
     left: 17.5em;
-=======
-    position: fixed;
-    left: 26.8em;
-    top: 9em;
->>>>>>> e6cbef79aa0bdd2d58beffa224d17f0ee3ad7d00
 }
 
 #down-icon:hover {
