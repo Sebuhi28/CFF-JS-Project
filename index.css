@@ -1,137 +1,151 @@
-body {
+* {
     margin: 0;
-    padding: 91px 124px;
-    box-sizing: border-box;  
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main-div {
+body {
+    background-color: #f0f0f0;
+    font-family: Roboto, sans-serif;
+}
+
+.task-tracker-form {
+    width: 330px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-color-div {
+    border-radius: 20px 20px 0 0;
+    height: 30px;
+    background-color: #E5A52F;
+}
+
+.task-h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.input-div {
+    gap: 10px;
+    padding: 0 20px;
+}
+
+#down-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: fixed;
+    left: 65%;
+    top: 9em;}
+
+#down-icon:hover {
+    color: #833AE0;
+}
+
+#delete-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 90%;
+    top: 2em;
+}
+
+#delete-icon:hover {
+    color: #833AE0;
+}
+
+.text-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.button-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
 }
 
-.about-div {
-    width: 60%;
+.add-button {
+    padding: 15px 20px;
+    background-color: #b074ff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 8%;
+    z-index: 1;
+    font-size: 14px;
 }
 
-.main-div img {
-    width: 290px;
-    height: 300px;
+.add-task-button {
+    padding: 15px 20px;
+    background-color: #833AE0;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    cursor: pointer;
+    position: relative;
+    right: 10%;
+    font-size: 14px;
+}
+
+.tasks-list {
+    padding: 10px 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task-item {
     display: flex;
     align-items: center;
-    margin-top: 140px;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
 }
 
-.about-div h1 {
-    font-family: "Roboto Slab, sans-serif";
-    font-size: 55px;
+.task-number {
+    font-weight: bold;
+    color: #333;
+    min-width: 25px;
 }
 
-.about-div p {
-    font-size: 24px;
-    font-family: "Roboto, sans-serif";
+.task-text {
+    flex: 1;
+    color: #333;
+    word-wrap: break-word;
 }
 
-.course-info {
+.task-actions {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    gap: 8px;
 }
 
-.infos {
-    display: flex;
-    margin-top: 40px;
+.edit-btn,
+.delete-btn {
+    padding: 6px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
 }
 
-.info {
-    width: 25%;
-    margin-right: 60px;
+.edit-btn:hover {
+    color: #833AE0;
 }
 
-
-
-@media screen and (min-width: 830px) and (max-width:1399px) {
-    body {
-        margin: 0;
-        padding: 56px 72px;
-        box-sizing: border-box;
-    }
-
-    .about-div h1 {
-        font-size: 32px;
-    }
-
-    .about-div p {
-        font-size: 14px;
-    }
-
-    .course-info img {
-        display: none;
-    }
-
-    .info h2 {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .info p {
-        font-size: 11px;
-    }
-    
-    .main-div img {
-        width: 165px;
-        height: 165px;
-        margin-right: 60px;
-    }
-}
-
-@media screen and (max-width: 829px) {
-    body {
-        margin: 0;
-        padding: 56px 33px;
-        box-sizing: border-box;
-    }
-    
-    .about-div h1 {
-        font-size: 26px;
-    }
-
-    .about-div p {
-        font-size: 12px;
-    }
-
-    .main-div {
-        flex-direction: column;
-    }
-
-    .main-div img {
-        width: 165px;
-        height: 165px;
-        margin-top: 20px;
-        margin: auto;
-    }
-
-    .info {
-        margin-right: 10px;
-        width: 50%;
-    }
-
-    .info h2 {
-        font-size: 12px;
-    }
-
-    .info p {
-        font-size: 10px;
-    }
-
-    .course-info img {
-        display: none;
-    }
-
-    .about-div {
-        width: 100%;
-    }
-
-    .infos {
-        margin-top: 20px;
-    }
+.delete-btn:hover {
+    color: #833AE0;
 }

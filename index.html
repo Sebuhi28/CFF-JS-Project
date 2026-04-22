@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Flex</title>
-    <link rel="stylesheet" href="index.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,44 +17,22 @@
 </head>
 
 <body>
-    <main>
-        <div class="main-div">
-            <div class="about-div">
-                <h1>About the course</h1>
-                <p>Sometimes movies are more complicated than four-volume novels. But you learn to read books in school,
-                    but
-                    you
-                    don't learn to watch movies. And without preparation, it can be difficult to enjoy watching a movie.
-                </p>
-                <p>
-                    In this 8-session course we will learn how to be conscious viewers. We will get acquainted with the
-                    stages
-                    of film production and learn how to watch a movie through the eyes of a screenwriter, director and
-                    editor.
-                    We will understand genres and look at the most important films, from Citizen Kane to The Matrix.</p>
-                </p>
-            </div>
-            <img class="cameraman" src="./kameraman.svg" alt="cam">
+    <form class="task-tracker-form">
+        <div class="nav-color-div"></div>
+        <h1 class="task-h1">Task Tracker</h1>
+        <i id="down-icon" class="fa-solid fa-arrow-down-short-wide"></i>
+        <div class="input-div">
+            <i id="delete-icon" class="fa-regular fa-circle-xmark"></i>
+            <input class="text-input" type="text">
         </div>
-        <div class="course-info">
-            <img src="./balaca-kameraman.svg" alt="bal-cam">
-            <div class="infos">
-                <div class="info">
-                    <h2>8 lessons</h2>
-                    <p>For an immersive experience
-                        cinematograph</p>
-                </div>
-                <div class="info">
-                    <h2>2 hours</h2>
-                    <p>Duration of each session</p>
-                </div>
-                <div class="info">
-                    <h2>3 weeks</h2>
-                    <p>Course duration</p>
-                </div>
-            </div>
+        <div class="button-div">
+            <input class="add-button" type="button" value="+">
+            <input class="add-task-button" type="button" value="Add">
         </div>
-    </main>
+    </form>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
