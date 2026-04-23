@@ -11,7 +11,6 @@ let sortDirection = true; // true = ascending
 
 addButton.addEventListener("click", function () {
     if (text.value.trim() === "") {
-        alert("Please enter a task");
     } else {
         tasks.push(text.value);
         
