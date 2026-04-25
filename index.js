@@ -24,7 +24,7 @@ addTaskButton.addEventListener("click", function () {
 
 addButton.addEventListener("click", function () {
     inputDiv.style.display = "";
-    text.focus();
+     text.focus();
 });
 
 function renderTasks() {
