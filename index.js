@@ -9,9 +9,8 @@ let form = document.querySelector(".task-tracker-form");
 let tasks = [];
 let sortDirection = true; // true = ascending
 
-addButton.addEventListener("click", function () {
+addTaskButton.addEventListener("click", function () {
     if (text.value.trim() === "") {
-        alert("Please enter a task");
     } else {
         tasks.push(text.value);
         
@@ -23,7 +22,7 @@ addButton.addEventListener("click", function () {
     }
 });
 
-addTaskButton.addEventListener("click", function () {
+addButton.addEventListener("click", function () {
     inputDiv.style.display = "";
     text.focus();
 });
